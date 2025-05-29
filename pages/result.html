@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Score</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <!-- audio -->
+  <audio autoplay loop>
+    <source src="../audio/Oneul-Hazelnut-Cheesecake.mp3">
+  </audio>
+  
+  <section class="page active" id="result-page">
+    <h2 class="header">Final Score</h2>
+    <p id="final-score" class="score-highlight"></p>
+    <div id="answer-review"></div>
+    <div class="btn-grp">
+      <button class="reveal-btn" class="btn-grp" id="toggle-btn" onclick="toggleAnswers()">Reveal Correct Answers</button>
+      <a href="./match.html"><button>Retry</button></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Brought to you by 
+      <a href="./imagenius.html" class="credit-link"><strong>Imagenius</strong></a>
+    </p>
+  </footer>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

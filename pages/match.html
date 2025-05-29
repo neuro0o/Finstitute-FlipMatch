@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match & Score</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- audio -->
+  <audio autoplay loop>
+    <source src="../audio/Oneul-Hazelnut-Cheesecake.mp3">
+  </audio>
+
+  <section class="header">
+    <h1>Match & Score!</h1>
+    <h5 class="tagline-match">Click it. Drag it. Match it!</h5>
+  </section>
+
+  <!-- Quiz Section -->
+  <section class="page active" id="quiz-page">
+    <div class="quiz-container">
+      <div class="match-col">
+        <div draggable="true" class="draggable" id="commercial">Commercial Banks</div>
+        <div draggable="true" class="draggable" id="islamic">Islamic Banks</div>
+        <div draggable="true" class="draggable" id="investment">Investment Banks</div>
+        <div draggable="true" class="draggable" id="insurance">Insurance & Takaful Operators</div>
+        <div draggable="true" class="draggable" id="central">Central Bank</div>
+        <div draggable="true" class="draggable" id="dfi">Development Financial Institution</div>
+      </div>
+
+      <div class="match-col">
+        <div class="droppable" data-match="dfi">
+          <div class="question-text">You're starting a chili plantation in rural area. Who will be able to give you spicy agro-loan?</div>
+          <div class="answer-slot">-- Drop Here --</div>
+        </div>
+        <div class="droppable" data-match="central">
+          <div class="question-text">Inflation is rising and your roti canai cost RM99.99 now?! Who will be able to control this madness!</div>
+          <div class="answer-slot">-- Drop Here --</div>
+        </div>
+        <div class="droppable" data-match="insurance">
+          <div class="question-text">You're planning a skydiving trip. Who helps you prepare in case... you ended up diving all the way 6ft underground?</div>
+          <div class="answer-slot">-- Drop Here --</div>
+        </div>
+        <div class="droppable" data-match="commercial">
+          <div class="question-text">You just bought an iPhone using your debit card, but it didn't go through! Who would you call for help?</div>
+          <div class="answer-slot">-- Drop Here --</div>
+        </div>
+        <div class="droppable" data-match="islamic">
+          <div class="question-text">It is time to repent and return to the right path. Let's start saving for your first Haji trip! But where? Gotta keep it riba free!</div>
+          <div class="answer-slot">-- Drop Here --</div>
+        </div>
+        <div class="droppable" data-match="investment">
+          <div class="question-text">Your startup, Meowflix, is growing fast and needs extra cash to reach more cat lovers. Who helps you raise it?</div>
+          <div class="answer-slot">-- Drop Here --</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-grp">
+      <button onclick="checkAnswers()">Submit Answer</button>
+      <button onclick="resetQuiz()">Clear Answer</button>
+      <a href="../index.html"><button>Back to Home</button></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Brought to you by 
+      <a href="./imagenius.html" class="credit-link"><strong>Imagenius</strong></a>
+    </p>
+  </footer>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>

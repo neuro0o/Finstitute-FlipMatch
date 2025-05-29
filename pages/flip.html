@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip & Learn</title>
+
+  <!-- css file -->
+  <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+  <!-- audio -->
+  <audio autoplay loop>
+    <source src="../audio/Oneul-Hazelnut-Cheesecake.mp3">
+  </audio>
+
+  <section class="header">
+    <h1>Financial Institution in Malaysia</h1>
+    <h5 class="tagline-flip">Infographics tell the tale.<br>Flip card fills in the details!</h5>
+  </section>
+
+  <!-- Toggle Buttons -->
+  <div class="view-button">
+
+    <button id="btn-infographic" onclick="showInfographic(); highlightButton('infographic')">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+      </svg>
+      View Infographic
+    </button>
+
+    <button id="btn-card" onclick="showCard(); highlightButton('card')">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h2.25m8.25-8.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-7.5A2.25 2.25 0 0 1 8.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 0 0-2.25 2.25v6" />
+      </svg>
+      View Flip Card
+    </button>
+  </div>
+
+  <!-- Infographic -->
+  <img src="../img/infographic.png" alt="Infographic" class="infographic" id="infographic">
+
+  <!-- Flip Card -->
+  <div class="card-container" id="card-container">
+    
+    <!-- 1. Central Bank -->
+    <div class="flip-card">
+      <div class="flip-card-inner">        
+        <div class="flip-card-front">
+          <img src="../img/central-bank.png" alt="" class="card-icon">
+          <p>CENTRAL BANK</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="section-title"><strong>DESCRIPTION</strong></p>
+          <ul>
+            <li>&#128204; The primary monetary authority overseeing Malaysia’s Financial system.</li>
+          </ul>
+          <p class="section-title"><strong>ROLE</strong></p>
+          <ul>
+            <li>&#128221; Formulates & implements monetary policy</li>
+            <li>&#128221; Regulates and supervises financial institutions</li>
+            <li>&#128221; Manages the nation's currency and reserves</li>
+            <li>&#128221; Issue currency in Malaysia</li>
+            <li>&#128221; Act as the governments' banker and financial adviser</li>
+          </ul>
+          <p class="section-title"><strong>EXAMPLE</strong></p>
+          <ul>
+            <li>&#127974; Bank Negara Malaysia</li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+
+    <!-- 2. Commercial Banks -->
+    <div class="flip-card">
+      <div class="flip-card-inner">        
+        <div class="flip-card-front">
+          <img src="../img/commercial-bank.png" alt="" class="card-icon">
+          <p>COMMERCIAL BANKS</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="section-title"><strong>DESCRIPTION</strong></p>
+          <ul>
+            <li>&#128204; Financial institutions offering a wide range of banking services to individuals and businesses.</li>
+          </ul>
+          <p class="section-title"><strong>ROLE</strong></p>
+          <ul>
+            <li>&#128221; Accept deposits & provide loans</li>
+            <li>&#128221; Offer payment & remittance services</li>
+            <li>&#128221; Provide safe custody services for valuable assets</li>
+          </ul>
+          <p class="section-title"><strong>EXAMPLE</strong></p>
+          <ul>
+            <li>&#127974; Affin Bank Berhad</li>
+            <li>&#127974; Alliance Bank Malaysia Berhad</li>
+            <li>&#127974; CIMB Bank Berhad</li>
+            <li>&#127974; Hong Leong Bank Berhad</li>
+            <li>&#127974; HSBC Bank Berhad</li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+
+    <!-- 3. Islamic Banks -->
+    <div class="flip-card">
+      <div class="flip-card-inner">        
+        <div class="flip-card-front">
+          <img src="../img/islamic-bank.png" alt="" class="card-icon">
+          <p>ISLAMIC BANKS</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="section-title"><strong>DESCRIPTION</strong></p>
+          <ul>
+            <li>&#128204; Banks operating in accordance with Shariah principles, prohibiting interest (riba).</li>
+          </ul>
+          <p class="section-title"><strong>ROLE</strong></p>
+          <ul>
+            <li>&#128221; Provide Shariah-compliant financial products like Murabaha & Ijarah</li>
+            <li>&#128221; Facilitate Islamic investment & financing</li>
+          </ul>
+          <p class="section-title"><strong>EXAMPLE</strong></p>
+          <ul>
+            <li>&#127974; Bank Islam Malaysia Berhad</li>
+            <li>&#127974; Bank Muamalat Malaysia Berhad</li>
+            <li>&#127974; RHB Islamic Bank Berhad</li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+
+    <!-- 4. Investment Banks -->
+    <div class="flip-card">
+      <div class="flip-card-inner">        
+        <div class="flip-card-front">
+          <img src="../img/investment-bank.png" alt="" class="card-icon">
+          <p>INVESTMENT BANKS</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="section-title"><strong>DESCRIPTION</strong></p>
+          <ul>
+            <li>&#128204; Specialized institution managing corporate or institutional accounts</li>
+            <li>&#128204; Focuses on capital market activities and corporate advisory services</li>
+          </ul>
+          <p class="section-title"><strong>ROLE</strong></p>
+          <ul>
+            <li>&#128221; Assisting business & governments in raising capital</li>
+            <li>&#128221; Assisting mergers & acquisitions activities</li>
+          </ul>
+          <p class="section-title"><strong>EXAMPLE</strong></p>
+          <ul>
+            <li>&#127974; Affin Hwang Investment Bank Berhad</li>
+            <li>&#127974; Hong Leong Investment Bank Berhad</li>
+            <li>&#127974; Public Investment Bank Berhad</li>
+            <li>&#127974; RHB Investment Bank Berhad</li>
+            <li>&#127974; Kenanga Investment Bank Berhad</li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+
+    <!-- 5. Development Financial Institutions -->
+    <div class="flip-card">
+      <div class="flip-card-inner">        
+        <div class="flip-card-front">
+          <img src="../img/dfi.png" alt="" class="card-icon">
+          <p>DEVELOPMENT FINANCIAL INSTITUTIONS</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="section-title"><strong>DESCRIPTION</strong></p>
+          <ul>
+            <li>&#128204; Government-established institutions aimed to assist certain priority sectors of the economy</li>
+          </ul>
+          <p class="section-title"><strong>ROLE</strong></p>
+          <ul>
+            <li>&#128221; Provide financing assistance to sectors like agriculture & infrastructure</li>
+            <li>&#128221; Support national development objectives</li>
+          </ul>
+          <p class="section-title"><strong>EXAMPLE</strong></p>
+          <ul>
+            <li>&#127974; Bank Kerjasama Rakyat Malaysia (Bank Rakyat)</li>
+            <li>&#127974; Bank Pertanian Malaysia (Agrobank)</li>
+            <li>&#127974; Bank Simpanan Nasional</li>
+            <li>&#127974; Small Medium Enterprise Development Bank Malaysia Berhad (SME Bank)</li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+
+    <!-- 6. Insurance & Takaful Operators -->
+    <div class="flip-card">
+      <div class="flip-card-inner">        
+        <div class="flip-card-front">
+          <img src="../img/insurance.png" alt="" class="card-icon">
+          <p>INSURANCE & TAKAFUL OPERATORS</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="section-title"><strong>DESCRIPTION</strong></p>
+          <ul>
+            <li>&#128204; Companies offering risk management solutions through conventional insurance and Islamic takaful</li>
+          </ul>
+          <p class="section-title"><strong>ROLE</strong></p>
+          <ul>
+            <li>&#128221; Provide life, health, and general insurance products</li>
+            <li>&#128221; Offer Shariah-compliant takaful services</li>
+          </ul>
+          <p class="section-title"><strong>EXAMPLE</strong></p>
+          <ul>
+            <li>&#127974; AIA PUBLIC Takaful Berhad</li>
+            <li>&#127974; Allianz Life Insurance Malaysia Berhad</li>
+            <li>&#127974; Zurich General Takaful Malaysia Berhad</li>
+            <li>&#127974; Zurich Takaful Malaysia Berhad</li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="btn-home">
+    <a href="../index.html"><button class="btn-group" id="btn-home">Back to Home</button></a>
+  </div>
+
+  <footer>
+    <p>
+      Brought to you by 
+      <a href="./imagenius.html" class="credit-link"><strong>Imagenius</strong></a>
+    </p>
+  </footer>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>
